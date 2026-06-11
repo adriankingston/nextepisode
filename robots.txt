@@ -1,0 +1,3 @@
+# Unofficial fan project — kept out of search indexes, like the apps it links to.
+User-agent: *
+Disallow: /
