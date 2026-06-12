@@ -157,6 +157,15 @@
       font-size: clamp(16px, 2.4vw, 19px);
       color: var(--muted);
     }
+    .tagline a {
+      color: var(--fg);
+      text-decoration: underline;
+      text-decoration-color: var(--muted);
+      text-underline-offset: 2px;
+      transition: color .15s ease, text-decoration-color .15s ease;
+    }
+    .tagline a:hover { color: var(--link); text-decoration-color: var(--link); }
+    .tagline a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-radius: 2px; }
 
     .projects { margin-top: 60px; }
     .projects h2 {
@@ -203,7 +212,7 @@
       </g>
     </svg>
     <h1>nextepisode<span class="caret">&gt;</span></h1>
-    <p class="tagline">this is where Adrian is trying things</p>
+    <p class="tagline">this is where <a href="https://www.linkedin.com/in/adriankingston/" target="_blank" rel="noopener noreferrer" title="Adrian Kingston on LinkedIn">Adrian</a> is trying things</p>
 
     <section class="projects">
       <h2>Projects</h2>
